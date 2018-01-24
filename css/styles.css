@@ -1,0 +1,17 @@
+.navbar-brand img{
+  margin-top: -15px;
+  max-width:85px;
+}
+.jumbotron {
+    background-image: url("../imagenes/jumbotron.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 0;
+}
+.jumbotron .container{
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  opacity: 0.6;
+}
