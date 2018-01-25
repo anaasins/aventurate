@@ -1,6 +1,6 @@
 .navbar-brand img{
-  margin-top: -15px;
-  max-width:85px;
+  margin-top: -30px;
+  height: 65px;
 }
 .jumbotron {
     background-image: url("../imagenes/jumbotron.jpg");
@@ -14,4 +14,29 @@
   color: black;
   font-weight: bold;
   opacity: 0.6;
+}
+
+nav{
+  padding-top: 15px;
+}
+
+.container .col-md-3{
+  background-color: #e7e7e7;
+  margin: 4%;
+  height: 390px;
+}
+.col-md-3 img{
+  width: 100%;
+  margin-top: 5%;
+}
+footer{
+  background-color: #e7e7e7;
+}
+#rrss{
+  height: 40px !important;
+  width: auto;
+}
+
+#spanContacto{
+  padding: 10px;
 }
