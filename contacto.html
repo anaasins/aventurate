@@ -10,8 +10,6 @@
   <!-- Enlace al css de bootstrap -->
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./css/styles.css">
-  <!-- enlace para mostrar o ocultar parrafos -->
-  <script type="text/javascript" src="./js/parrafo.js"></script>
 </head>
 
 <body>
@@ -31,9 +29,9 @@
        otro elemento que se pueda ocultar al minimizar la barra -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">INICIO</a></li>
+        <li><a href="index.html">INICIO</a></li>
         <li><a href="#">PAGINA2</a></li>
-        <li><a href="contacto.html">CONTACTO</a></li>
+        <li class="active"><a href="#">CONTACTO</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="indexIngles.html">Inglés</a></li>
@@ -52,33 +50,33 @@
 </div>
   <!-- fin jumbotron -->
 
-  <!-- tres columnas -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <img src="./imagenes/buceo.jpg" alt="Persona buceando">
-        <h4>EXPERIENCIAS PARA ADULTOS</h4>
-        <p>En aventurate contamos con una gran oferta de deportes extremos, como buceo, con los que puedes disfrutar con tus amigos o familia.</p>
-        <p id="expAdultos" class="hidden">Contamos con una gran variedad de experiencias, todas ellas de un dia, en las que disfrutaras como un niño.</p>
-        <button type="button" class="btn btn-sm" name="expAdultos" onclick="esconder(this);"><span class="glyphicon glyphicon-plus"></span></button>
+  <!-- formulario -->
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Nombre">
       </div>
-      <div class="col-md-3">
-        <img src="./imagenes/nieve.jpg" alt="Persona esquiando">
-        <h4>EXCURSIONES PARA ADULTOS</h4>
-        <p>En aventurate contamos con excursiones para adultos, como ski, dandote la opcion de elegir el tiempo que quieres pasar fuera de casa.</p>
-        <p id="excAdultos" class="hidden">Se puede elegir entre una excursión de un dia, o de un fin de semana, pero siempre serán excursiones para disfrutar como niños.</p>
-        <button type="button" class="btn btn-sm" name="excAdultos" onclick="esconder(this);"><span class="glyphicon glyphicon-plus"></span></button>
-      </div>
-      <div class="col-md-3">
-        <img src="./imagenes/paseo.jpg" alt="Persona dando un paseo por la montaña">
-        <h4>EXPERIENCIAS EN FAMILIA</h4>
-        <p>En aventurate contamos con una gran oferta de experiencias para disfrutar con toda la familia, tanto los más pequeños como los más mayores.</p>
-        <p id="excFamilia" class="hidden">Se puede elegir entre una excursión de un dia, o de un fin de semana, pero siempre serán excursiones para disfrutar tanto los más peques como los más mayores.</p>
-        <button type="button" class="btn btn-sm" name="excFamilia" onclick="esconder(this);"><span class="glyphicon glyphicon-plus"></span></button>
+      <div class="form-group col-md-6">
+        <label for="apellidos">Apellidos</label>
+        <input type="text" class="form-control" id="apellidos" placeholder="Apellidos">
       </div>
     </div>
-  </div>
-  <!-- fin tres columnas -->
+    <div class="form-group">
+      <label for="correo">Correo</label>
+      <input type="text" class="form-control" id="correo" placeholder="xxxxx@gmail.com">
+    </div>
+    <div class="form-group">
+      <label for="direccion">Direccion</label>
+      <input type="text" class="form-control" id="direccion" placeholder="C/Mayor, 24 Catarroja (Valencia)">
+    </div>
+    <div class="form-group">
+      <label for="asunto">Asunto: </label>
+      <textarea name="name" class="form-control" rows="8" cols="80" id="asunto"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">ENVIAR</button>
+</form>
+  <!-- fin formulario-->
 
   <!-- footer -->
   <footer class='container-fluid text-center'>

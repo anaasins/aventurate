@@ -23,7 +23,7 @@ nav{
 .container .col-md-3{
   background-color: #e7e7e7;
   margin: 4%;
-  height: 390px;
+  padding: 1%;
 }
 .col-md-3 img{
   width: 100%;
@@ -39,4 +39,24 @@ footer{
 
 #spanContacto{
   padding: 10px;
+}
+
+#logoFooter{
+  height: 100px;
+  width: auto;
+}
+
+#mapaFooter{
+  height: 250px;
+  width: auto;
+}
+
+.hidden{
+  display: none;
+}
+.mostrar{
+  display: block;
+}
+form{
+  margin: 3%;
 }
